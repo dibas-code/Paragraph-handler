@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  width: 100vw;
+}
+
+.navbar {
+  width: 100vw;
+  height: 15vh;
+  background-color: rgba(12, 12, 230, 0.899);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+@media screen and (max-width:600px) {
+  .nav {
+    gap: 10px;
+    font-size: 20px;
+  }
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .count {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #myText {
+    font-size: 16px;
+    width: 80vw;
+  }
+}
+
+.home {
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.textspace {
+  width: 100%;
+  display: Flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.count {
+  margin: 10px;
+
+}
+
+#myText {
+  width: 60vw;
+  height: 39vh;
+  padding: 4px 10px;
+  font-size: 24px;
+  border: 2px solid grey;
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.para1 {
+  font-size: 24px;
+  background-color: aqua;
+  padding: 10px;
+}
+
+.para2 {
+  font-size: 24px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+.color {
+  background-color: green;
+  color: white;
+}
