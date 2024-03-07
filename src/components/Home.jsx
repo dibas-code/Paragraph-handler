@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { useState } from 'react'
 
 export default function Home() {
-    const [text, setText] = useState("Enter your text here")
+    const [text, setText] = useState('')
     const textarea = useRef(null)
 
     //handle change function for text area
@@ -56,7 +56,7 @@ export default function Home() {
                     <span className='para2'>Word Count:{countWords(text)}</span>
                 </div>
 
-                <textarea ref={textarea} id="myText" name="text" onChange={handleonChange} value={text} />
+                <textarea ref={textarea} id="myText" name="text" onChange={handleonChange} value={text} placeholder='Enter your text here' />
             </div>
             <div className="buttons">
                 <button className='btn btn1' onClick={handleUpCLick} >Convert to upperCase</button>
