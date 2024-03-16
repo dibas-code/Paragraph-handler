@@ -1,13 +1,19 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react';
 export default function Navbar() {
+    const [showNav, setShowNav] = useState(false);
+
+
     return (
-        <div className='navbar'>
+        <nav>
             <h1>TextUtils</h1>
-            <div className='nav'>
-                <NavLink style={{ color: "white", }} className={(e) => { return e.isActive ? "color" : "" }} to="/">Home</NavLink>
-                <NavLink style={{ color: "white" }} className={(e) => { return e.isActive ? "color" : "" }} to="/about">About</NavLink>
+            <input id="check" type="checkbox" /><label htmlFor="checkbox">Click</label>
+            <div className='navs'>
+
+                <NavLink id="Navlinks" className={(e) => { return e.isActive ? "color" : "" }} to="/">Home</NavLink>
+                <NavLink id="Navlinks" className={(e) => { return e.isActive ? "color" : "" }} to="/about">About</NavLink>
             </div>
-        </div>
+        </nav>
     )
 }

@@ -46,7 +46,6 @@ export default function Home() {
         const letter = text.split('');
         return letter.filter(letter => letter !== " ").length
     }
-
     return (
         <div className="home">
 
@@ -65,12 +64,9 @@ export default function Home() {
                 <button className='btn btn4' onClick={handleCleartext}>Clear text</button>
                 <button className='btn btn5' onClick={handleCopyText}>Copy Text</button>
             </div>
-            <p className="para1" > Estimated reading time : {0.008 * text.split(" ").length}  minute</p>
+            <p className="para1" > Estimated reading time : {0.008 * text.split(" ").length} second</p>
             <h2>Preview:</h2>
             <p style={{ fontSize: "20px", backgroundColor: "red", color: "white", padding: "10px" }}>{text}</p>
-
-
-
         </div>
     )
 }

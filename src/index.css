@@ -3,63 +3,43 @@
   padding: 0;
 }
 
-
-.container {
-  width: 100vw;
+body {
+  background-color: #12125a;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.navbar {
-  width: 100vw;
-  height: 15vh;
-  background-color: rgba(12, 12, 230, 0.899);
+nav {
+  height: 10vh;
+  background-color: rgb(22 22 142 / 90%);
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.nav {
-  display: flex;
-  gap: 20px;
+nav label {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+
+.navs {
   font-size: 30px;
+}
+
+.navs #Navlinks {
+  color: white;
+  text-decoration: none;
+  padding: 2.8vh 60px;
 }
 
 h1 {
   font-size: 40px;
 }
 
-@media screen and (max-width:600px) {
-  .nav {
-    gap: 10px;
-    font-size: 20px;
-  }
-
-  .h1 {
-    font-size: 30px;
-  }
-
-  .count {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  #myText {
-    font-size: 16px;
-    width: 80vw;
-  }
-}
 
 .home {
   margin-top: 20px;
@@ -121,6 +101,57 @@ h1 {
 }
 
 .color {
-  background-color: green;
-  color: white;
+  background-color: rgb(48, 43, 210);
+}
+
+@media screen and (max-width:650px) {
+  .navs {
+    width: 60vw;
+    height: 80vh;
+    background-color: grey;
+    position: fixed;
+    top: 10vh;
+    right: -100%;
+    transition: 0.5s all;
+  }
+
+  .navs #Navlinks {
+    display: block;
+    line-height: 40px;
+  }
+
+  #check {
+    display: block;
+  }
+
+  .color {
+    background-color: aqua;
+  }
+
+
+  .h1 {
+    font-size: 30px;
+  }
+
+  .count {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #myText {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    width: 80vw;
+  }
+}
+
+#check:checked~.navs {
+  right: 0px;
 }
